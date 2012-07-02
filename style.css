@@ -1,0 +1,25 @@
+/* 
+    Document   : style
+    Created on : Jul 2, 2012, 11:55:08 PM
+    Author     : jakub
+    Description:
+       Some rules that can be used to activate and style mobile menu 
+*/
+
+/* default behaviour best to add it to a div wrapped around the mobile menu form */
+
+#mobile_menu_wrapper {
+        display:none;
+}
+
+
+/* Show mobile menu and hide normal menu */
+@media screen and (max-width: 320px) {
+        #normal_menu {
+                display:none;
+        }
+        
+        #mobile_menu_wrapper {
+                display: block;
+        }
+}
